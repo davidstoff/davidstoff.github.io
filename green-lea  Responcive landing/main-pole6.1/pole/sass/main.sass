@@ -1,0 +1,302 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/superfish/dist/css/superfish"
+@import "app/libs/jquery.mmenu/jquery.mmenu.all"
+@import "app/libs/magnific-popup/dist/magnific-popup"
+@import "app/css/magnific-custom"
+@import "app/libs/hamburgers-css/dist/hamburgers"
+@import "app/libs/Remodal/dist/remodal"
+@import "app/libs/Remodal/dist/remodal-default-theme"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here	
+.inform-2
+	.info
+		.info-bg
+			top: -30px
+.plan-of-section
+	background-color: #f6f6f6
+	padding: 60px 
+	padding-top: 90px
+	color: $main-color
+	.info-plan
+		.plan-bg
+			.main-kv
+				position: absolute
+				padding-top: 55px
+				display: block
+				right: 34px
+				.first-kv
+					width: 350px 
+					height: 350px
+					z-index: 1
+					border: 8px solid $accent-color
+					transform: rotate(45deg)
+				.second-kv
+					z-index: 2
+					width: 350px
+					height: 350px
+					border: 1px solid $accent-color
+					transform: rotate(15deg)
+			.middle-dot
+				position: absolute
+				left: 0			
+				display: flex 	
+				img
+					width: 100%
+					position: relative
+					top: 288px			
+	
+.new-item
+	background-color: #FFF	
+	padding-bottom: 5px
+	h3
+		font-size: 16px
+		text-align: center
+		padding-top: 20px;
+		font-family: "RobotoRegular", sans-serif
+	&-img
+		min-height: 332px	
+		background-position: center
+		background-repeat: no-repeat	
+		background-size: auto
+
+	ul
+		padding-top: 21px
+		list-style-type: none
+		margin: 0
+		padding: 15px
+		font-size: 14px	
+		li
+			padding-bottom: 10px
+			span
+				font-family: "RobotoMedium", sans-serif
+				font-weight: bold
+				float: right
+.frames
+	img
+		position: absolute
+		left: 0
+		right: 0
+.info-plan-right
+	box-shadow: rgba(0,0,0,0.35) 0 0 13px
+	left: 16px
+	position: relative
+	.sl_slide
+		background: #fff
+		text-align: center	
+		.second-item
+			height: 414px
+			padding-top: 24px		
+			h4
+				font-size: 18px
+			img
+				margin: auto
+	.slick-prev:before
+		display: none
+	.slick-next:before
+		display: none	
+
+.popup-form
+	position: relative
+	border-radius: 10px
+	padding: 57px 46px
+	background-image: url(../img/popup-bg.png)
+	background-size: cover
+	background-position: center
+	box-shadow: rgba(0,0,0,.75) 0 0 32px
+	h3
+		font-family: "RobotoRegular", sans-serif
+		text-align: center  	
+		color: $main-color
+		padding-bottom: 23px
+	label, input
+		display: block 
+		width: 100% 
+	label
+		margin-bottom: 13px
+	input
+		border: $main-color 1px solid
+		padding: 6px 15px 	
+		border-radius: 3px
+		background-color: #fff 
+		opacity: 0.8
+	.btn
+		display: inline-block
+		padding: 10px 35px
+		margin-bottom: 0
+		background-color: #ff6269
+		font-size: 14px
+		color: #fff
+		text-transform: uppercase
+		font-weight: bold
+		font-family: "RobotoRegular", sans-serif
+		line-height: 1.42857143
+		border-radius: 20px		
+		outline: 0!important 
+		text-align: center
+		white-space: nowrap
+		vertical-align: middle
+		-ms-touch-action: manipulation
+		 touch-action: manipulation
+		cursor: pointer
+.mfp-bg
+	background: $main-color
+
+.popup-form1
+	text-align: center	
+	margin-right: 45px
+	#my-menu
+		ul
+			list-style: none
+			font-size: 18px
+			li
+				line-height: 50px
+				a
+					color: #fff
+					font-family: "RobotoRegular", sans-serif
+.mfp-close
+	font-family: -webkit-body
+	font-weight: 700	
+	font-size: 42px	
+	opacity: 1	
+
+.mfp-wrap
+	z-index: 10002
+
+.remodal-overlay
+	background-image: url(../img/footer-dots.png)
+	&::after
+		content: ''
+		background: $main-color
+		opacity: 0.55
+		position: absolute
+		height: 100%
+		width: 100%
+.remodal
+	max-width: 100%
+	padding: 0
+	padding: 60
+	position: relative
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	.foot-content
+		position: relative
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-size: cover
+		background-position: center
+		&::before
+			content: ''
+			background-color: $main-color
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			position: absolute
+			opacity: .60	
+	.info-img
+		padding: 15px
+		padding-top: 33px	
+	.foot-content
+		text-align: center
+		.right-phone
+			font-size: 28px
+			font-family: "RobotoRegular", sans-serif
+			color: #fff
+		.left-phone
+			font-size: 28px
+			font-family: "RobotoRegular", sans-serif
+			color: #fff		
+		.modal-button
+			padding-bottom: 35px
+			padding-top: 25px
+			a.btn
+				background-color: #ff6269	
+				padding: 10px
+				padding-right: 20px	
+				padding-left: 20px	
+				border-radius: 50px
+				text-transform: uppercase
+				font-weight: bold
+				font-family: "RobotoBold", sans-serif
+				color: #fff
+				font-weight: bold	
+
+
+.main-foot
+	.foot-content
+		position: relative
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-size: cover
+		background-position: center
+		&::before
+			content: ''
+			background-color: $main-color
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			position: absolute
+			opacity: .60	
+	.info-img
+		padding: 15px
+		padding-top: 33px	
+	.foot-content
+		text-align: center
+		.right-phone
+			font-size: 28px
+			font-family: "RobotoRegular", sans-serif
+			color: #fff
+		.left-phone
+			font-size: 28px
+			font-family: "RobotoRegular", sans-serif
+			color: #fff		
+		.modal-button
+			padding-bottom: 35px
+			a.btn
+				background-color: #ff6269	
+				padding: 10px
+				padding-right: 20px	
+				padding-left: 20px	
+				border-radius: 50px
+				text-transform: uppercase
+				font-weight: bold
+				font-family: "RobotoBold", sans-serif
+				color: #fff
+				font-weight: bold	
+
+//ALWAYS END
+@import "media"
